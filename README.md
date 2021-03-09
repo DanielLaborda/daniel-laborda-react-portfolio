@@ -1,4 +1,4 @@
-# React Portfolio Daniel Laborda
+# Daniel Laborda React Portfolio APP
 
 > Provided for the students of the [Bottega Code School](https://bottega.tech/)
 
