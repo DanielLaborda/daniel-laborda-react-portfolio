@@ -1,0 +1,44 @@
+.content-wrapper {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 84px);
+    color: $teal;
+
+    .left-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img{
+            width: 600px;
+        }
+        .category{
+            font-size: 1.5em;
+            font-weight: 900;
+        }
+    }
+    .right-column {
+        padding: 100px;
+        background-color: rgba($charcoal, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+
+
+        .site-link {
+            padding:20px;
+            color: $offwhite;
+            background-color: $teal;
+            text-decoration: none;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+                background-color: $dark-teal;
+
+            }
+        }
+    }
+}
