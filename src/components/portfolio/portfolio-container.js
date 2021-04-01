@@ -30,7 +30,6 @@ export default class PortfolioContainer extends Component {
           data: response.data.portfolio_items
         })
       }
-      
     })
     .catch(error => {
       // handle error

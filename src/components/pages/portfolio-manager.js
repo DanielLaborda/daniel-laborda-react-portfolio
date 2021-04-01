@@ -37,7 +37,7 @@ export default class PortfolioManager extends Component {
     axios.delete(`https://api.devcamp.space/portfolio/portfolio_items/${portfolioItem.id}`, 
     {withCredentials:true}).then(response=> {
       this.setState({
-        portfolioItem: this.state.portfolioItems.filter(item => {
+        portfolioItems: this.state.portfolioItems.filter(item => {
           return item.id !== portfolioItem.id
         })
       });
