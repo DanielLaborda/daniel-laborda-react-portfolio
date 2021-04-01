@@ -10,7 +10,7 @@ const BlogItem = props => {
         content,
         title,
         featured_image_url
-    } = props.blogItem
+    } = props.blogItem;
 
     return (
         <div>

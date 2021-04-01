@@ -12,7 +12,7 @@ const NavigationContainer = (props)=> {
                 <NavLink exact to={route} activeClassName="av-link-active">{linkText}</NavLink>
             </div>
 
-        )
+        );
     }
 
     const handleSignOut = () => {

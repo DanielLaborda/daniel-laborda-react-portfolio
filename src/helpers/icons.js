@@ -15,4 +15,4 @@ const Icons = () => {
     return library.add(faTrash, faSignOutAlt, faEdit, faCircleNotch, faPlusCircle, faPhoneAlt, faPaperPlane, faMapMarkedAlt, faKey);
 }
 
-export default Icons
+export default Icons;

@@ -23,7 +23,7 @@ export default class App extends Component {
 
     this.state = {
       loggedInStatus: "NOT_LOGGED_IN"
-    }
+    };
 
     this.handleSuccessfulLogin = this.handleSuccessfulLogin.bind(this);
     this.handleUnsuccessfulLogin = this.handleUnsuccessfulLogin.bind(this);
@@ -33,19 +33,19 @@ export default class App extends Component {
   handleSuccessfulLogin() {
     this.setState({
       loggedInStatus: "LOGGED_IN"
-    })
+    });
   }
 
   handleUnsuccessfulLogin() {
     this.setState({
       loggedInStatus: "NOT_LOGGED_IN"
-    })
+    });
   }
 
   handleSuccessfulLogout() {
     this.setState({
       loggedInStatus: "LOGGED_IN"
-    })
+    });
   }
 
   checkLoginStatus(){

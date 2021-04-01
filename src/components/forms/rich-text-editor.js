@@ -10,7 +10,7 @@ export default class RichTextEditor extends Component {
 
         this.state = {
             editorState: EditorState.createEmpty()
-        }
+        };
 
         this.onEditorStateChange = this.onEditorStateChange.bind(this);
         this.getBase64 = this.getBase64.bind(this);
@@ -45,7 +45,7 @@ export default class RichTextEditor extends Component {
     uploadFile(file){
         return new Promise((resolve, reject) => {
             this.getBase64(file, data => resolve({ data: {link: data} }));
-        })
+        });
     }
 
     render(){

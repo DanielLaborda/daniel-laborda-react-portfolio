@@ -9,7 +9,7 @@ export default class Login extends Component {
         this.state = {
             email: "",
             password: ""
-        }
+        };
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -19,7 +19,7 @@ export default class Login extends Component {
         this.setState({
             [event.target.name]: event.target.value,
             errorText: ""
-        })
+        });
     }
 
     handleSubmit(event){

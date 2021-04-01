@@ -15,7 +15,7 @@ export default class Blog extends Component {
       currentPage: 0,
       isLoading: true,
       blogModalIsOpen: false
-    }
+    };
 
     this.getBlogItems =  this.getBlogItems.bind(this);
     this.onScroll = this.onScroll.bind(this);
@@ -36,28 +36,26 @@ export default class Blog extends Component {
       return response.data;
     }).catch(error => {
       console.log("delete blog error", error);
-    })
+    });
   }
 
   handleSuccessfulNewBlogSubmission(blog) {
     this.setState({
       blogModalIsOpen: false,
       blogItems: [blog].concat(this.state.blogItems)
-    })
-
-
+    });
   }
 
   handleModalClose() {
     this.setState({
       blogModalIsOpen: false
-    })
+    });
   }
 
   handleNewBlogClick() {
     this.setState({
       blogModalIsOpen: true
-    })
+    });
   }
 
   onScroll() {
@@ -84,7 +82,7 @@ export default class Blog extends Component {
       });
     }).catch(error => {
       console.log("getBlogItem error",error);
-    })
+    });
   }
 
   componentWillMount() {
@@ -107,7 +105,7 @@ export default class Blog extends Component {
       } else {
         return <BlogItem key={blogItem.id} blogItem={blogItem}/>;
       }
-    })
+    });
 
     return ( 
       <div className="blog-container">  

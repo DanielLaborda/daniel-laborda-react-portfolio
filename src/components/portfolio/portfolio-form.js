@@ -23,7 +23,7 @@ export default class PortfolioForm extends Component {
             editMode: false,
             apiUrl: "https://daniellaborda.devcamp.space/portfolio/portfolio_items",
             apiAction: "post"
-        }
+        };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.componentConfig = this.componentConfig.bind(this);
@@ -46,7 +46,7 @@ export default class PortfolioForm extends Component {
             })
         }).catch(error => {
             console.log("deleteImage error", error);
-        })
+        });
     }
 
     componentDidUpdate() {
@@ -144,7 +144,7 @@ export default class PortfolioForm extends Component {
         this.setState({
             [event.target.name]: event.target.value,
             errorText: ""
-        })
+        });
     }
 
     handleSubmit(event){
@@ -173,7 +173,7 @@ export default class PortfolioForm extends Component {
                 });
             }).catch(error => {
                 console.log("Prtfolio handle Submit error", error);
-            })
+            });
         } else {
             axios.post(`${this.state.apiUrl}`, this.buildForm(),
              {withCredentials: true})
@@ -199,7 +199,7 @@ export default class PortfolioForm extends Component {
                 });
             }).catch(error => {
                 console.log("Prtfolio handle Submit error", error);
-            })
+            });
         }
 
         

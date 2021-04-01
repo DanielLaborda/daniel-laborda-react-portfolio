@@ -7,7 +7,7 @@ export default class  portfolioDetail extends Component {
     
     this.state = {
       portfolioItem: ""
-    }
+    };
   }
 
   componentWillMount() {
@@ -40,7 +40,8 @@ export default class  portfolioDetail extends Component {
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center center"
-    }
+    };
+
     return (
       <div>
         <div className="content-wrapper" style={bannerStyles}>

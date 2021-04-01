@@ -16,7 +16,7 @@ export default class BlogForm extends Component {
         featured_image: "",
         apiUrl: "https://daniellaborda.devcamp.space/portfolio/portfolio_blogs",
         apiAction: "post"
-    }
+    };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -124,7 +124,7 @@ export default class BlogForm extends Component {
   handleChange(event) {
       this.setState({
           [event.target.name]: event.target.value
-      })
+      });
   }
 
   render() {

@@ -13,7 +13,7 @@ export default class BlogDetail extends Component {
             currentId: this.props.match.params.slug,
             blogItem: {},
             editMode: false
-        }
+        };
 
         this.getBlogItem = this.getBlogItem.bind(this);
         this.handleEditClick = this.handleEditClick.bind(this);
@@ -25,7 +25,7 @@ export default class BlogDetail extends Component {
         this.setState({
             blogItem: blog,
             editMode: false
-        })
+        });
 
     }
 
@@ -34,7 +34,7 @@ export default class BlogDetail extends Component {
             blogItem: {
                 featured_image_url: ""
             }
-        })
+        });
     }
 
     handleEditClick(){
@@ -67,7 +67,7 @@ export default class BlogDetail extends Component {
             content,
             featured_image_url,
             blog_status
-        } = this.state.blogItem
+        } = this.state.blogItem;
 
         const contentManager = () => {
             if (this.state.editMode) {

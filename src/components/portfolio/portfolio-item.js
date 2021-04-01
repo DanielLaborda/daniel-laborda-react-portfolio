@@ -8,7 +8,7 @@ export default class PortfolioItem extends Component{
 
         this.state = {
             portfolioItemClass: ""
-        }
+        };
     }
 
     handleMouseEnter(){

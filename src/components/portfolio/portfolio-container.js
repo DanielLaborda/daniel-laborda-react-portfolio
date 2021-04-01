@@ -11,7 +11,7 @@ export default class PortfolioContainer extends Component {
         pageTitle: "Welcome to my portfolio",
         isLoading: false,
         data: []
-      }
+      };
       this.handleFilter = this.handleFilter.bind(this);
     }
 
@@ -35,7 +35,7 @@ export default class PortfolioContainer extends Component {
     .catch(error => {
       // handle error
       console.log(error);
-    })
+    });
   }
 
   portfolioItems() {

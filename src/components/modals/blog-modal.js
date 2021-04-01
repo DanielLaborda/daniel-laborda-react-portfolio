@@ -21,13 +21,13 @@ export default class BlogModal extends Component {
       overlay: {
         backgroundColor: "rgba(1, 1, 1, 0.75)"
       }
-    }
+    };
 
     this.handleSuccessfulFormSubmission = this.handleSuccessfulFormSubmission.bind(this);
   }
 
   handleSuccessfulFormSubmission(blog) {
-    this.props.handleSuccessfulNewBlogSubmission(blog)
+    this.props.handleSuccessfulNewBlogSubmission(blog);
   }
 
   render() {
