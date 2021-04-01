@@ -16,7 +16,7 @@ export default class Auth extends Component {
         this.props.history.push("/");
     }
     handleUnsuccessfulAuth(){
-        this.props.handleUn0successfulLogin();
+        this.props.handleUnsuccessfulLogin();
     }
 
     render(){
